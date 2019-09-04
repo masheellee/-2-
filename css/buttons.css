@@ -1,0 +1,91 @@
+.button-fill-blue, .button-fill-empty {
+  display: inline;
+  border-radius: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 15px;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  color: #3eb0f7;
+}
+
+.button-fill-blue {
+  border: 2px solid #3eb0f7;
+  background: #3eb0f7;
+  color: white;
+}
+
+.button-fill-blue:hover {
+  background: none;
+  color: #3eb0f7;
+}
+
+.button-fill-empty {
+  border: 2px solid #3eb0f7;
+  color: #3eb0f7;
+}
+
+.button-fill-empty:hover {
+  background: #3eb0f7;
+  color: white;
+}
+
+.button-connect {
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 50px;
+  background: #3eb0f7;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+
+.button-connect:hover {
+  background: #428bca;
+}
+
+.button-price {
+  background: #3eb0f7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 120px;
+  padding: 10px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.button-price:hover {
+  background: #428bca;
+}
+
+.button-form {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 50px;
+  background: #3eb0f7;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+
+.button-form:hover {
+  background: #428bca;
+}
+/*# sourceMappingURL=buttons.css.map */
