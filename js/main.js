@@ -53,34 +53,24 @@ $('input, textarea').keyup(function( event ) {
 
 // STICKY MENU
 
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
-$(window).scroll(function(){
-    let pxToHeader = $('.menu').offset().top;
-    if($(this).scrollTop() > pxToHeader) {
-       $('.menu').addClass('sticky-menu');
-    }else{
-        // $('.menu').removeClass('sticky-menu');
-    }
-});
+// Get the navbar
+let menu = document.getElementById("menu");
 
-$(document).ready(function(){
-	
-	//Check to see if the window is top if not then display button
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 500) {
-			$('.arrow-up').fadeIn();
-		} else {
-			$('.arrow-up').fadeOut();
-		}
-	});
-	
-	//Click event to scroll to top
-	$('.arrow-up').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
-		return false;
-	});
-	
-});
+// Get the offset position of the navbar
+let sticky = menu.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    menu.classList.add("sticky-menu")
+  } else {
+    menu.classList.remove("sticky-menu");
+  }
+}
+
 
 // Menu-button
 
